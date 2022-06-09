@@ -1,14 +1,9 @@
 .content img {
   overflow: auto;
   padding: 0;
-  margin-top: var(--margin);
   max-width: 100%;
   display: block;
   border-radius: var(--border-radius);
-}
-.content figcaption {
-  font-weight: bold;
-  color: var(--content-text-dark);
 }
 
 /* Add classes for manipulating images position */
@@ -40,4 +35,13 @@
 }
 .content p.huge > img {
   max-width: 30rem;
+}
+.content p.three-fourth > img {
+  max-width: 75%;
+}
+.content p.half > img {
+  max-width: 50%;
+}
+.content p.quarter > img {
+  max-width: 25%;
 }
