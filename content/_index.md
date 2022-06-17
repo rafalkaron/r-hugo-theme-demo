@@ -1,45 +1,58 @@
 ---
 title: Home
-draft: false
+description: Consectetur laborum reprehenderit sunt cillum occaecat culpa magna aliqua ullamco velit.
 ---
  
 ## Heading 2 {#custom-id}
 
-Esse non ex occaecat nostrud ullamco eiusmod nostrud ea velit.
+Esse non ex occaecat nostrud ullamco eiusmod nostrud ea velit.Dolore ut labore Lorem Lorem aliquip adipisicing anim cillum velit aliqua enim nostrud adipisicing. Aliquip labore occaecat ut deserunt in. Est dolore labore id amet occaecat occaecat ea. In nisi aliquip Lorem tempor reprehenderit ex tempor sunt ut reprehenderit nostrud consequat tempor tempor.
+
+Esse minim labore dolore nulla ex deserunt. Ea irure velit eu sint est sit magna non eiusmod cupidatat laboris exercitation aliqua excepteur. In cillum amet ex pariatur. Ea Lorem et excepteur exercitation duis consequat consectetur occaecat laborum pariatur et ex sit minim.
 
 ### Heading 3
 
-Et ipsum irure minim adipisicing quis qui anim.
+Lorem culpa quis laboris aliquip sint dolore irure esse irure ea qui. Voluptate occaecat anim pariatur consequat ex mollit laboris culpa aliquip mollit. In laboris Lorem nostrud deserunt duis in ad pariatur ipsum sit.
+
+Proident eiusmod id ea laboris mollit amet veniam id ipsum excepteur commodo consequat. Nisi sunt duis aute adipisicing sint eu sunt officia commodo irure irure magna. Magna cillum magna sunt proident. Et nisi proident ullamco sint velit do enim voluptate aliquip reprehenderit duis in. Anim id esse pariatur et id id magna. Dolore eiusmod est culpa magna velit nisi.
+
+Enim occaecat ad quis tempor excepteur anim aute esse veniam exercitation consectetur excepteur consectetur. Culpa esse ut exercitation laborum consectetur labore labore. Aliqua sit veniam proident laborum aute do. Minim elit dolor dolore adipisicing aliqua magna laborum ad velit sunt non.
 
 #### Heading 4
 
-Quis sint labore sunt et cupidatat excepteur amet aute.
+Et ipsum tempor in quis mollit nisi. Minim consequat veniam eu ea exercitation deserunt pariatur exercitation consectetur qui minim velit laborum ullamco. Laboris velit ut nostrud consectetur quis exercitation quis non anim. Aliqua fugiat laboris adipisicing ullamco ut tempor nisi ut exercitation laboris culpa nisi excepteur.
+
+Id fugiat anim magna non magna aliqua aliquip excepteur ex cupidatat tempor ea fugiat. Laboris excepteur aliqua occaecat amet commodo do consectetur proident sit cillum tempor commodo. Adipisicing magna commodo aliquip ea culpa sit non excepteur ipsum. Ex nisi magna amet ullamco ea cillum fugiat quis minim cupidatat do ex.
 
 ##### Heading 5
 
-Ut adipisicing excepteur id consequat sunt laborum eu nostrud et excepteur exercitation minim.
+Veniam laboris laboris quis aliquip et minim tempor. Ea sit do eu elit exercitation elit Lorem dolore cupidatat laborum cillum. Nostrud veniam enim eiusmod excepteur id. Quis dolor mollit non exercitation consequat nisi et ipsum minim. Est aliquip ea proident anim tempor do culpa id laboris esse elit esse. Sunt enim esse laborum magna velit. Mollit proident laboris ad fugiat proident incididunt.
+
+Commodo magna id aute fugiat non. Do aliqua et eu veniam. Adipisicing exercitation magna est enim deserunt voluptate. Dolore enim cupidatat irure ut veniam ex officia. Dolor sint consectetur cillum in.
 
 ##### Heading 6
 
-Qui laborum deserunt pariatur veniam et est laborum.
+Consequat nulla amet reprehenderit consectetur. Dolor aliqua quis est anim ipsum. Consectetur reprehenderit do cillum id deserunt. Excepteur ut non amet aliqua proident ea quis exercitation. Nostrud ullamco non anim tempor in consequat incididunt incididunt elit ipsum fugiat nisi. Sint tempor officia commodo commodo id irure.
+
+Eiusmod aliqua mollit proident commodo est aute. Lorem occaecat cillum Lorem reprehenderit excepteur id consequat aliqua proident ullamco. Reprehenderit excepteur qui ad et in sit exercitation.
 
 ## Formatting
 
-### Builtin
+### Basic formatting
 
-**Bold**
+**Bold**  
 *Italic*  
 ~~strikethrough~~  
 
-***
+### Font size
 
-### Extended
-
+Smaller text
+{.text_smaller}
+Small text
+{.text_small}
 Large text
 {.text_large}
 
-Small text
-{.text_small}
+### Font color
 
 **yellow**
 {.yellow}
@@ -102,14 +115,14 @@ Title B
 
 ## Table
 
-### Regular
+### Regular table
 
 |Header A|Header B|
 |--------|--------|
 | Item A | Item B |
 | Item C | Item D |
 
-### CV
+### CV table
 
 |     |
 |-:|:-|
@@ -143,46 +156,50 @@ Lorem ipsum `@import` lorem ipsum
 
 ## Links
 
+[Internal: Heading 3](#heading-3)  
+[Peer: Section](section)  
+[External: Google](https://www.google.com)  
 [404](404.html)  
-[Google](https://www.google.com)  
-[Heading 3](#heading-3)
 
 ## Images
 
-### Tiny
-
-![Mountain](images/mountain.jpg)
-{.tiny}
-
-### Tiny Center
-
-![Mountain2](images/mountain.jpg)
-{.tiny .center}
-
-### Tiny Right
-
-![Mountain3](images/mountain.jpg)
-{.tiny .right}
-
-### Small
+### Fixed size
 
 ![Mountain4](images/mountain.jpg)
 {.small}
 
-### Medium
-
 ![Mountain5](images/mountain.jpg)
 {.medium}
-
-### Large
 
 ![Mountain6](images/mountain.jpg)
 {.large}
 
-### Huge
-
 ![Mountain7](images/mountain.jpg)
 {.huge}
+
+### Responsive size
+
+![Mountain7](images/mountain.jpg)
+{.quarter}
+
+![Mountain7](images/mountain.jpg)
+{.half}
+
+![Mountain7](images/mountain.jpg)
+{.three-fourth}
+
+### Position
+
+![Mountain](images/mountain.jpg)
+{.tiny}
+
+![Mountain2](images/mountain.jpg)
+{.tiny .center}
+
+![Mountain3](images/mountain.jpg)
+{.tiny .right}
+
+## Notes
 
 Laboris anim cupidatat do tempor fugiat qui aute magna nostrud sint reprehenderit cupidatat.
 {.note}
@@ -206,7 +223,7 @@ Footnote a[^1], Footnote b[^footnote_b]
 
     Indent paragraphs to include them in the footnote.
 
-## Quote
+## Blockquote
 
 > block quote line  
 > block quote line  

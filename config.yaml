@@ -7,31 +7,12 @@ Params:
   description: "Site description."
   author: "Name Surname"
   favicon_href: "img/favicon.svg"
-
-  # Footer icons
+  # Footer
   email: "mailto:mail@domain.com"
   github: "https://github.com/rafalkaron/r-hugo-theme"
   linkedin: "https://linkedin.com/in/linkedin_id"
   twitter: "https://twitter.com/twitter_id"
   five_o_o_px: "https://500px.com/500px_id"
-
-# Languages
-defaultContentLanguage: en
-languages:
-  en:
-    title: "R"
-    weight: 1
-  pl:
-    title: "R"
-    weight: 2
-
-# See alsos
-related:
-  indices:
-    - name: keywords
-      weight: 100
-  threshold: 80
-  toLower: false
 
 # Navigation
 # End each URL with "/" to make active pages work
@@ -47,10 +28,15 @@ Menus:
       URL: "/blog/"
       weight: 3
 
-#Taxonomies:
-#  tag: "tags"
+# Enable related links/see alsos
+related:
+  indices:
+    - name: keywords
+      weight: 100
+  threshold: 80
+  toLower: false
 
-# Rendering settings
+# Markdown rendering settings
 markup:
   defaultMarkdownHandler: goldmark
   goldmark:
