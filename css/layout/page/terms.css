@@ -6,7 +6,7 @@
 #layout-terms .tags-wrapper li.tag {
   list-style: none;
   flex-shrink: 0;
-  font-weight: bold;
+  font-weight: 600;
 }
 #layout-terms .tags-wrapper li.tag a {
   padding: 0.25em 0.5em;
@@ -19,8 +19,7 @@
   background-color: var(--content-background-middle);
 }
 #layout-terms .tags-wrapper li.tag a:hover,
-#layout-terms .tags-wrapper li.tag a:active,
-#layout-terms .tags-wrapper li.tag a:focus {
+#layout-terms .tags-wrapper li.tag a:active {
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }

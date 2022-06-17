@@ -40,7 +40,7 @@
 .gutter .gutter-item a {
   color: var(--content-text-dark);
   font-size: 0.8rem;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: none;
   padding: var(--padding-small) var(--padding-small);
   border: transparent;
@@ -48,8 +48,7 @@
   background-clip: border-box;
 }
 .gutter .gutter-item a:hover,
-.gutter .gutter-item a:active,
-.gutter .gutter-item a:focus {
+.gutter .gutter-item a:active {
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
 }
@@ -72,7 +71,7 @@
 }
 .gutter .pagination-counter {
   font-size: 0.7rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 .gutter .pagination-next-link {
   margin-left: 0.25rem;
@@ -91,7 +90,8 @@
 .gutter .gutter-subpages li + li:before,
 .gutter .gutter-group .gutter-item + .gutter-item::before {
   content: "┃ ";
-  color: var(--content-text-middle);
+  font-weight: 700;
+  color: var(--content-text-dark);
 }
 .gutter .gutter-group .gutter-item + .gutter-item {
   margin-left: 0.1rem;
@@ -104,6 +104,7 @@
 .gutter .breadcrumbs li + li:before {
   content: " / ";
   padding-left: 0.2rem;
+  font-weight: 700;
 }
 
 /* Print */

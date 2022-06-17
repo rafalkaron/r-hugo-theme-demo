@@ -11,7 +11,6 @@
 /* Make more space between articles */
 #layout-blog .post {
   width: 100%;
-  /*border: var(--content-background-middle) var(--border-width-medium) solid;*/
   background-color: var(--content-background-middle);
   border-radius: var(--border-radius);
   background-clip: border-box;
@@ -36,8 +35,7 @@
   background-clip: border-box;
 }
 #layout-blog h2.ref > a:hover,
-#layout-blog h2.ref > a:active,
-#layout-blog h2.ref > a:focus {
+#layout-blog h2.ref > a:active {
   text-decoration: none;
   background-color: var(--content-text-dark);
   color: var(--content-text-light);
@@ -50,11 +48,11 @@
 }
 
 #layout-blog .summary a.read-more {
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: none;
   white-space: nowrap;
   border: none;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding: 0 var(--padding-small);
   border: transparent;
   border-radius: var(--border-radius);

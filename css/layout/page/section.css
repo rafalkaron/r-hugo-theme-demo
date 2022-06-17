@@ -9,7 +9,6 @@
 }
 #layout-section .subpage {
   width: 48.5%;
-  /*border: var(--content-background-middle) var(--border-width-medium) solid;*/
   background-color: var(--content-background-middle);
   border-radius: var(--border-radius);
   background-clip: border-box;
@@ -31,7 +30,7 @@
 #layout-section a.subpage-ref {
   font-size: 1.2rem;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 700;
   display: flex;
   align-items: center;
   border: none;
@@ -49,6 +48,9 @@
 
 #layout-section .description {
   margin-top: calc(var(--margin) / 4);
+}
+
+#layout-section .subpage .description {
   font-size: 0.8rem;
   color: var(--content-text-middle);
 }
