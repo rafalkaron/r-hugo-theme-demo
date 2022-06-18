@@ -165,38 +165,38 @@ Lorem ipsum `@import` lorem ipsum
 
 ### Fixed size
 
-![Mountain4](images/mountain.jpg)
+![Mountain4](media/mountain.jpg)
 {.small}
 
-![Mountain5](images/mountain.jpg)
+![Mountain5](media/mountain.jpg)
 {.medium}
 
-![Mountain6](images/mountain.jpg)
+![Mountain6](media/mountain.jpg)
 {.large}
 
-![Mountain7](images/mountain.jpg)
+![Mountain7](media/mountain.jpg)
 {.huge}
 
 ### Responsive size
 
-![Mountain7](images/mountain.jpg)
+![Mountain7](media/mountain.jpg)
 {.quarter}
 
-![Mountain7](images/mountain.jpg)
+![Mountain7](media/mountain.jpg)
 {.half}
 
-![Mountain7](images/mountain.jpg)
+![Mountain7](media/mountain.jpg)
 {.three-fourth}
 
 ### Position
 
-![Mountain](images/mountain.jpg)
+![Mountain](media/mountain.jpg)
 {.tiny}
 
-![Mountain2](images/mountain.jpg)
+![Mountain2](media/mountain.jpg)
 {.tiny .center}
 
-![Mountain3](images/mountain.jpg)
+![Mountain3](media/mountain.jpg)
 {.tiny .right}
 
 ## Notes
