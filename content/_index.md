@@ -166,6 +166,9 @@ Lorem ipsum `@import` lorem ipsum
 ### Fixed size
 
 ![Mountain4](media/mountain.jpg)
+{.tiny}
+
+![Mountain4](media/mountain.jpg)
 {.small}
 
 ![Mountain5](media/mountain.jpg)
