@@ -81,9 +81,11 @@
     bottom: 5.75rem;
     overflow: scroll;
     border-bottom: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    border-left: solid var(--border-width-thin) var(--content-background-middle);
   }
   #on-this-page {
-    border-left: solid var(--border-width-thin) var(--content-background-middle);
     margin-right: var(--padding-main);
     padding-left: calc(var(--margin-large) * 0.1);
   }
@@ -122,10 +124,12 @@
     left: 0;
     bottom: 5.75rem;
     overflow: scroll;
-  }
-  #side-menu {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
     border-right: solid var(--border-width-thin)
       var(--content-background-middle);
+  }
+  #side-menu {
     margin-left: var(--padding-main);
     padding-right: calc(var(--margin-large) * 0.1);
   }
