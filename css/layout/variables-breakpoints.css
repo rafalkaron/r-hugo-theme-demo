@@ -81,10 +81,10 @@
     bottom: 5.75rem;
     overflow: scroll;
     border-bottom: none;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
     padding-bottom: 0;
+    margin-bottom: 0;
   }
+  /* Remove ugly Windows scrollbars */
   .on-this-page-wrapper::-webkit-scrollbar {
     display: none;
   }
@@ -128,9 +128,10 @@
     left: 0;
     bottom: 5.75rem;
     overflow: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
+  /* Remove ugly Windows scrollbars */
   .side-menu-wrapper::-webkit-scrollbar {
     display: none;
   }
@@ -169,9 +170,10 @@
 /* PORTRAIT PHONES */
 @media only screen and (max-width: 576px) {
   :root {
-    --font-size: 1.2rem;
-    --margin: 1.2rem;
-    --margin-large: 2.5rem;
+    --font-size: 1.3rem;
+    --margin: 1.3rem;
+    --margin-large: 1.5rem;
+    --padding-main: 1.5rem;
   }
   p.huge > img {
     max-width: 300px !important;
