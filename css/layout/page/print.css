@@ -8,7 +8,8 @@
   .theme-switch-wrapper,
   .top-button-wrapper,
   .gutter,
-  .web {
+  .web,
+  .heading-link {
     display: none;
   }
 
@@ -51,7 +52,8 @@
   }
 
   article,
-  div {
+  div,
+  code {
     break-inside: auto;
     page-break-inside: auto;
   }
@@ -68,8 +70,7 @@
   li,
   .post,
   .subpage,
-  pre,
-  code,
+  .codeblock,
   footer {
     break-inside: avoid;
     page-break-inside: avoid;
@@ -83,6 +84,8 @@
   }
 
   /* Fix colors in code */
+  .content .codeblock,
+  .content .codeblock *,
   .content code,
   .content code * {
     color: var(--content-text-light) !important;
