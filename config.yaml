@@ -65,6 +65,6 @@ markup:
     noClasses: true
     style: monokai
   tableOfContents:
-    endLevel: 3
+    endLevel: 2
     ordered: false
     startLevel: 2
