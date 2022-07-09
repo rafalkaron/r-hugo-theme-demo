@@ -1,29 +1,62 @@
 const images = document.querySelectorAll(".popup");
-console.log(images);
 let imgSrc;
-// get images src onclick
+// Get image src on click
 images.forEach((img) => {
   img.addEventListener("click", (e) => {
     imgSrc = e.target.src;
-    //run modal function
-    imgModal(imgSrc);
+    imgTitle = e.target.parentElement.querySelector("h6").innerText;
+    imgDesc = e.target.parentElement.querySelector(".description").innerText;
+    imgLocation = e.target.parentElement
+      .querySelector(".location")
+      .getAttribute("href");
+    // Display the modal
+    imgModal(imgSrc, imgTitle, imgDesc, imgLocation);
   });
 });
-//creating the modal
-let imgModal = (src) => {
-  const modal = document.createElement("div");
-  modal.setAttribute("class", "modal");
-  //add the modal to the main section or the parent element
-  document.querySelector("body").append(modal);
-  //adding image to modal
-  const newImage = document.createElement("img");
-  newImage.setAttribute("src", src);
-  //creating the close button
-  const closeBtn = document.createElement("i");
-  closeBtn.setAttribute("class", "fas fa-times closeBtn");
-  //close function
-  modal.onclick = () => {
-    modal.remove();
+
+// Display the modal
+let imgModal = (src, title, desc, location) => {
+  const modal = document.querySelector(".modal");
+  modal.style.display = "flex";
+
+  // Add current image src
+  popupImage = document.querySelector(".to-popup");
+  popupImage.setAttribute("src", src);
+
+  downloadIcon = document.querySelector(".modal-download");
+  downloadIcon.setAttribute("href", src);
+
+  modalTitle = document.querySelector(".modal-title");
+  modalTitle.textContent = title;
+
+  modalDesc = document.querySelector(".modal-description");
+  modalDesc.textContent = desc;
+
+  modalLocation = document.querySelector(".modal-location");
+  modalLocation.setAttribute("href", location);
+
+  modalClose = document.querySelector(".modal-close");
+
+  body = document.querySelector("body");
+  body.setAttribute("class", "modal-on");
+
+  // Close on close button click
+  modalClose.onclick = () => {
+    modal.style.display = "none";
+    body.removeAttribute("class", "modal-on");
   };
-  modal.append(newImage);
+
+  // Close on image click
+  popupImage.onclick = () => {
+    modal.style.display = "none";
+    body.removeAttribute("class", "modal-on");
+  };
+
+  // Close on ESC
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape") {
+      modal.style.display = "none";
+      body.removeAttribute("class", "modal-on");
+    }
+  });
 };
