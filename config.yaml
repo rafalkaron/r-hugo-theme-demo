@@ -25,9 +25,12 @@ Menus:
     - Name: "Section"
       URL: "/section/"
       weight: 2
+    - Name: "Gallery"
+      URL: "/gallery/"
+      weight: 3
     - Name: "Blog"
       URL: "/blog/"
-      weight: 3
+      weight: 4
 
 # Enable related links/see alsos
 related:
