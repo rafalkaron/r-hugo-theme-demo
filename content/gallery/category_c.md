@@ -2,6 +2,10 @@
 title: Category C
 description: Optional category description.
 image: "media/mountain.jpg"
+images:
+  - "media/mountain.jpg"
+  - "media/mountain.jpg"
+  - "media/mountain.jpg"
+  - "media/mountain.jpg"
+  - "media/mountain.jpg"
 ---
-
-{{< figure src="media/mountain.jpg" width="100%" title="Mountain" >}}
