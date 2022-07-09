@@ -4,15 +4,4 @@ description: Optional category description.
 image: "media/mountain.jpg"
 ---
 
-![Mountain](/media/mountain.jpg)
-{.tiny}
-![Mountain](/media/mountain.jpg)
-{.tiny}
-![Mountain](/media/mountain.jpg)
-{.tiny}
-![Mountain](/media/mountain.jpg)
-{.tiny}
-![Mountain](/media/mountain.jpg)
-{.tiny}
-![Mountain](/media/mountain.jpg)
-{.tiny}
+{{< figure src="media/mountain.jpg" width="100%" title="Mountain" >}}
