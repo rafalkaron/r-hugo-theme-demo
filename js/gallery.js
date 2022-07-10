@@ -1,22 +1,32 @@
 const images = document.querySelectorAll(".popup");
-let imgSrc;
-// Get image src on click
+
+// Create img modals on click
 images.forEach((img) => {
   img.addEventListener("click", (e) => {
-    imgSrc = e.target.getAttribute("full");
-    imgTitle = e.target.parentElement.querySelector("h6").innerText;
-    imgDesc = e.target.parentElement.querySelector(".description").innerText;
-    imgLocation = e.target.parentElement
-      .querySelector(".location")
-      .getAttribute("href");
-    imgAlt = e.target.alt;
-    // Display the modal
-    imgModal(imgSrc, imgTitle, imgDesc, imgLocation, imgAlt);
+    imgModalFromElem(e.target);
   });
 });
 
-// Display the modal
-let imgModal = (src, title, desc, location, alt, next) => {
+let imgModalFromElem = (e) => {
+  imgSrc = e.getAttribute("full");
+  imgTitle = e.parentElement.querySelector("h6").innerText;
+  imgDesc = e.parentElement.querySelector(".description").innerText;
+  imgLocation = e.parentElement.querySelector(".location").getAttribute("href");
+  imgAlt = e.alt;
+  imgNo = e.parentElement.getAttribute("data-item");
+  imgTotal = e.parentElement.getAttribute("data-total");
+  displayImgModal(
+    imgSrc,
+    imgTitle,
+    imgDesc,
+    imgLocation,
+    imgAlt,
+    imgNo,
+    imgTotal
+  );
+};
+
+let displayImgModal = (src, title, desc, location, alt, imgNo, imgTotal) => {
   const modal = document.querySelector(".modal");
   modal.style.display = "flex";
 
@@ -38,6 +48,12 @@ let imgModal = (src, title, desc, location, alt, next) => {
   modalLocation = document.querySelector(".modal-location");
   modalLocation.setAttribute("href", location);
 
+  modalNumber = document.querySelector(".modal-no");
+  modalNumber.textContent = imgNo;
+
+  modalCounter = document.querySelector(".modal-counter");
+  modalCounter.textContent = imgTotal;
+
   if (location !== null) {
     modalLocation.style.display = "inline";
   } else {
@@ -45,12 +61,6 @@ let imgModal = (src, title, desc, location, alt, next) => {
   }
 
   modalClose = document.querySelector(".modal-close");
-
-  // // modalNext = document.querySelector(".modal-next");
-  // // modalNext.setAttribute("href", next);
-
-  // // modalPrev = document.querySelector(".modal-prev");
-  // // modalPrev.setAttribute("href", "test");
 
   body = document.querySelector("body");
   body.setAttribute("class", "modal-on");
@@ -66,7 +76,24 @@ let imgModal = (src, title, desc, location, alt, next) => {
     modal.style.display = "none";
     body.removeAttribute("class", "modal-on");
   };
+  // NEXT PREV buttons
+  nextModalNo = parseInt(imgNo) + 1;
+  modalNext = document.querySelector(`#item-${nextModalNo} img`);
+  modalNextButton = document.querySelector(".modal-next");
+  modalNextButton.onclick = () => {
+    if (modalNext !== null) {
+    imgModalFromElem(modalNext);
+    }
+  };
 
+  prevModalNo = parseInt(imgNo) - 1;
+  modalprev = document.querySelector(`#item-${prevModalNo} img`);
+  modalprevButton = document.querySelector(".modal-prev");
+  modalprevButton.onclick = () => {
+    if (modalprev !== null) {
+      imgModalFromElem(modalprev);
+    }
+  };
   // Close on ESC
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
