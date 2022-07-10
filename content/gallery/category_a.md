@@ -6,6 +6,7 @@ images:
   1:
     title: "Mountain"
     src: "media/mountain.jpg"
+    thumb: "media/mountain_thumb.jpg"
     alt: "Alt text"
     desc: "Description"
     loc: https://goo.gl/maps/VKVDKWg5AM7jzTFe9
