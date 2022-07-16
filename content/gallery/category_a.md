@@ -9,7 +9,7 @@ images:
     thumb: "mountain_thumb.jpg"
     alt: "Alt text"
     desc: "Description"
-    loc: https://goo.gl/maps/VKVDKWg5AM7jzTFe9
+    loc: Czerwone Wierchy
   2:
     title: "Mountain"
     src: "mountain.jpg"
