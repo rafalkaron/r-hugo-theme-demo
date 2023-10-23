@@ -1,5 +1,5 @@
 ---
-title: Subsubpage A
+title: Subsection subpage A
 description: "This is an optional short description. If it's not added, the first paragraph gets truncated."
 weight: 1
 keywords: "keyword"

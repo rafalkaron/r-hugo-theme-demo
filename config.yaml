@@ -32,6 +32,9 @@ Menus:
     - Name: "Blog"
       URL: "/blog/"
       weight: 4
+    - Name: "Simple"
+      URL: "/simple/"
+      weight: 5
 
 # Enable related links/see alsos
 related:
